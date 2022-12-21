@@ -10,6 +10,14 @@ def high_and_low(numbers):
 
     return f"{max_el} {min_el}"
 
-print(high_and_low("8 3 -5 42 -1 0 0 -9 4 7 4 -4"))
 
+def table_mul(n):
+    table = [[0] * n] * n;
+    for i in range(n):
+        for j in range(n):
+            table[i][j] = i * j
+    return table
 
+print(table_mul(5))
+m = [range(5)]
+print(m)
