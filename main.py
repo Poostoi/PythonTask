@@ -12,12 +12,27 @@ def high_and_low(numbers):
 
 
 def table_mul(n):
-    table = [[0] * n] * n;
     for i in range(n):
         for j in range(n):
-            table[i][j] = i * j
-    return table
+            print((i + 1) * (j + 1), end=' ')
+        print("\n")
 
-print(table_mul(5))
-m = [range(5)]
-print(m)
+
+def no_table_mul(n):
+    for i in range(n):
+        for j in range(n):
+            print(f"{j + 1} * {i + 1} = {(i + 1) * (j + 1)}")
+
+
+def new_year_mood(n):
+    i = 1
+    flag = True
+    while flag:
+        for j in range(i, i+i):
+            print(j, end=" ")
+            flag = False if j == n else True
+        print("\n")
+        i += 1
+
+
+print(new_year_mood(5))
