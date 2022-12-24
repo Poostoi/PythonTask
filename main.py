@@ -26,12 +26,16 @@ def no_table_mul(n):
 
 def new_year_mood(n):
     i = 1
+    k = 0
     flag = True
     while flag:
-        for j in range(i, i+i):
-            print(j, end=" ")
-            flag = False if j == n else True
-        print("\n")
+        for j in range(i):
+            k += 1
+            print(k, end=" ")
+            if k == n:
+                flag = False
+                break
+        print()
         i += 1
 
 
