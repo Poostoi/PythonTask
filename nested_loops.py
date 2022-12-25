@@ -39,4 +39,26 @@ def new_year_mood(n):
         i += 1
 
 
-print(new_year_mood(5))
+def sum_sum(n):
+    sum_number = 0
+    for i in range(n):
+        sum_number += int(input())
+    return sum_number
+
+
+def hare(n):
+    count_hare = 0
+    for i in range(n):
+        while (string := input()) != "ВСЁ":
+            count_hare += 1 if string == "зайка" else 0
+    return count_hare
+
+
+#def nod(n):
+#    list_number = [int(input()) for i in range(n)]
+#    nod_number = min(list_number)
+#    for element in list_number:
+#        while nod_number !=0:
+#           element, nod_number =
+
+print("\U0001F49C")
