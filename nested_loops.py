@@ -54,11 +54,16 @@ def hare(n):
     return count_hare
 
 
-#def nod(n):
-#    list_number = [int(input()) for i in range(n)]
-#    nod_number = min(list_number)
-#    for element in list_number:
-#        while nod_number !=0:
-#           element, nod_number =
+def nod(n):
+    nod_number = int(input("Введите число: "))
+    for i in range(n-1):
+        element = int(input("Введите число: "))
+        nod_number, element = element if element < nod_number else nod_number,\
+            nod_number if element < nod_number else element
+        while nod_number:
+            element, nod_number = nod_number, element % nod_number
+        nod_number = element
+    return nod_number
 
-print("\U0001F49C")
+
+print(nod(3))
